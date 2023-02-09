@@ -45,8 +45,6 @@ final class MainViewModel: MainViewModelProtocol {
     var books: [EBook] = []
     var myLybrary: [EBook] = []
     
-    
-    
     @Published var searchText = "" {
         didSet {
             if searchText.isEmpty {

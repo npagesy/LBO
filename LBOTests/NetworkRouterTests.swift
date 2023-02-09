@@ -10,15 +10,15 @@ import XCTest
 @testable import LBO
 
 final class NetworkRouterTests: XCTestCase {
-//    func test_buildUrlRequest() throws {
-//        // Given
-//        let router = DogRouter.getAllBreeds
-//        
-//        // When
-//        let request = try router.asURLRequest().url?.absoluteString
-//        
-//        // Then
-//        XCTAssertEqual(router.path, "breeds/list/all")
-//        XCTAssertEqual(request, "https://dog.ceo/api/breeds/list/all")
-//    }
+    func test_buildUrlRequest() throws {
+        // Given
+        let router = BookRouter.getBook(title: "title", author: "author")
+
+        // When
+        let request = try router.asURLRequest().url?.absoluteString
+
+        // Then
+        XCTAssertEqual(router.path, "books/v1/volumes")
+        XCTAssertEqual(request, "https://www.googleapis.com/books/v1/volumes?q=title+inauthor:author")
+    }
 }

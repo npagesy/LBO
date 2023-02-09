@@ -5,32 +5,97 @@
 //  Created by Noeline PAGESY on 06/02/2023.
 //
 
+import Combine
 import XCTest
+
 @testable import LBO
 
 final class LBOTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var storage = Set<AnyCancellable>()
+    
+    func test_init() {
+        // Given
+        let serviceProvider = BookServiceProviderMock()
+        let storage = StorageMock()
+        
+        // When
+        let viewModel = MainViewModel(serviceProvider: serviceProvider, storage: storage)
+        
+        // Then
+        XCTAssertTrue(storage.getOldSearchTitleTermCalled)
+        XCTAssertTrue(storage.getOldSearchAuthorTermCalled)
+        XCTAssertTrue(viewModel.searchBookTitle.isEmpty)
+        XCTAssertTrue(viewModel.searchBookAuthor.isEmpty)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_init_withHistoric() {
+        // Given
+        let serviceProvider = BookServiceProviderMock()
+        let storage = StorageMock()
+        let title = "title"
+        let author = "author"
+        storage.saveSearchTitleTerm(title)
+        storage.saveSearchAuthorTerm(author)
+        
+        // When
+        let viewModel = MainViewModel(serviceProvider: serviceProvider, storage: storage)
+        
+        // Then
+        XCTAssertTrue(storage.getOldSearchTitleTermCalled)
+        XCTAssertTrue(storage.getOldSearchAuthorTermCalled)
+        XCTAssertEqual(viewModel.searchBookTitle, title)
+        XCTAssertEqual(viewModel.searchBookAuthor, author)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+//    func test_search() {
+//        // Given
+//        let serviceProvider = BookServiceProviderMock()
+//        var storage = StorageMock()
+//        let title = "title"
+//        storage.saveSearchTitleTerm(title)
+//        let viewModel = MainViewModel(serviceProvider: serviceProvider, storage: storage)
+//
+//        let expectation = XCTestExpectation()
+//
+//        // When
+//        viewModel.search()
+//
+//        // Then
+//        viewModel.$filteredEbook
+//            .dropFirst()
+//            .sink { _ in
+//                expectation.fulfill()
+//            }
+//            .store(in: &storage)
+//
+//        wait(for: [expectation], timeout: 1)
+//
+//        XCTAssertTrue(serviceProvider.getBooksCalled)
+//        XCTAssertFalse(viewModel.books.isEmpty)
+//        XCTAssertEqual(viewModel.filteredEbook, viewModel.books)
+//        XCTAssertTrue(storage.saveSearchTitleTermCalled)
+//        XCTAssertTrue(storage.saveSearchAuthorTermCalled)
+//        XCTAssertEqual(viewModel.viewState, .success)
+//    }
+    
+    func test_initLibrary() {
+        // Given
+        let serviceProvider = BookServiceProviderMock()
+        let storage = StorageMock()
+        let viewModel = MainViewModel(serviceProvider: serviceProvider, storage: storage)
+        
+        // When
+        viewModel.initLibrary()
+        
+        // Then
+        XCTAssertTrue(storage.getFavoritesCalled)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_updateFavorite() {
+        // Given
+        
+        // When
+        
+        // Then
     }
-
 }
