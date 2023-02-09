@@ -11,7 +11,7 @@ import SwiftUI
 struct LBOApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(viewModel: MainViewModel(serviceProvider: BookServiceProvider(), storage: UserDefaultDataStore()))
         }
     }
 }

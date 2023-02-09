@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E21CA5F62991C1B200DAA612 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21CA5F52991C1B200DAA612 /* Book.swift */; };
 		E232FB7E2991B3B900101D11 /* LBOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB7D2991B3B900101D11 /* LBOApp.swift */; };
-		E232FB802991B3B900101D11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB7F2991B3B900101D11 /* ContentView.swift */; };
+		E232FB802991B3B900101D11 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB7F2991B3B900101D11 /* MainView.swift */; };
 		E232FB822991B3BA00101D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E232FB812991B3BA00101D11 /* Assets.xcassets */; };
 		E232FB852991B3BA00101D11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E232FB842991B3BA00101D11 /* Preview Assets.xcassets */; };
 		E232FB8F2991B3BA00101D11 /* LBOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB8E2991B3BA00101D11 /* LBOTests.swift */; };
@@ -18,8 +18,11 @@
 		E2C5C3CD2993E80A002AD997 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3CC2993E80A002AD997 /* NetworkRouter.swift */; };
 		E2C5C3CF2993E83D002AD997 /* NetworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3CE2993E83D002AD997 /* NetworkRouterTests.swift */; };
 		E2C5C3D12993E890002AD997 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3D02993E890002AD997 /* ServiceProvider.swift */; };
+		E2C5C3D62994466E002AD997 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3D52994466E002AD997 /* MainViewModel.swift */; };
 		E2C5C3D929953EA1002AD997 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E2C5C3D829953EA1002AD997 /* Kingfisher */; };
 		E2C5C3DC2995980D002AD997 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3DB2995980D002AD997 /* Storage.swift */; };
+		E2C5C3E02995AF0B002AD997 /* EBookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3DF2995AF0B002AD997 /* EBookCardView.swift */; };
+		E2C5C3E22995B2D3002AD997 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3E12995B2D3002AD997 /* SearchList.swift */; };
 		E2C5C3E42995B35A002AD997 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3E32995B35A002AD997 /* EBook.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +47,7 @@
 		E21CA5F52991C1B200DAA612 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E232FB7A2991B3B900101D11 /* LBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E232FB7D2991B3B900101D11 /* LBOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBOApp.swift; sourceTree = "<group>"; };
-		E232FB7F2991B3B900101D11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E232FB7F2991B3B900101D11 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E232FB812991B3BA00101D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E232FB842991B3BA00101D11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E232FB8A2991B3BA00101D11 /* LBOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,8 +58,11 @@
 		E2C5C3CC2993E80A002AD997 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		E2C5C3CE2993E83D002AD997 /* NetworkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouterTests.swift; sourceTree = "<group>"; };
 		E2C5C3D02993E890002AD997 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		E2C5C3D52994466E002AD997 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E2C5C3DA299540EF002AD997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E2C5C3DB2995980D002AD997 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		E2C5C3DF2995AF0B002AD997 /* EBookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBookCardView.swift; sourceTree = "<group>"; };
+		E2C5C3E12995B2D3002AD997 /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
 		E2C5C3E32995B35A002AD997 /* EBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +119,7 @@
 				E2C5C3CB2993E7F8002AD997 /* Data */,
 				E2C5C3DD2995983E002AD997 /* Domain */,
 				E232FB7D2991B3B900101D11 /* LBOApp.swift */,
-				E232FB7F2991B3B900101D11 /* ContentView.swift */,
+				E2C5C3DE29959851002AD997 /* Presentation */,
 				E232FB812991B3BA00101D11 /* Assets.xcassets */,
 				E232FB832991B3BA00101D11 /* Preview Content */,
 			);
@@ -163,6 +169,17 @@
 				E2C5C3E32995B35A002AD997 /* EBook.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		E2C5C3DE29959851002AD997 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C3DF2995AF0B002AD997 /* EBookCardView.swift */,
+				E232FB7F2991B3B900101D11 /* MainView.swift */,
+				E2C5C3D52994466E002AD997 /* MainViewModel.swift */,
+				E2C5C3E12995B2D3002AD997 /* SearchList.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E232FB802991B3B900101D11 /* ContentView.swift in Sources */,
+				E232FB802991B3B900101D11 /* MainView.swift in Sources */,
 				E2C5C3DC2995980D002AD997 /* Storage.swift in Sources */,
+				E2C5C3E22995B2D3002AD997 /* SearchList.swift in Sources */,
 				E2C5C3D12993E890002AD997 /* ServiceProvider.swift in Sources */,
 				E2C5C3CD2993E80A002AD997 /* NetworkRouter.swift in Sources */,
+				E2C5C3E02995AF0B002AD997 /* EBookCardView.swift in Sources */,
 				E232FB7E2991B3B900101D11 /* LBOApp.swift in Sources */,
+				E2C5C3D62994466E002AD997 /* MainViewModel.swift in Sources */,
 				E2C5C3E42995B35A002AD997 /* EBook.swift in Sources */,
 				E21CA5F62991C1B200DAA612 /* Book.swift in Sources */,
 			);
