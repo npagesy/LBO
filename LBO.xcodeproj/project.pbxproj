@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21CA5F62991C1B200DAA612 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21CA5F52991C1B200DAA612 /* Book.swift */; };
 		E232FB7E2991B3B900101D11 /* LBOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB7D2991B3B900101D11 /* LBOApp.swift */; };
 		E232FB802991B3B900101D11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB7F2991B3B900101D11 /* ContentView.swift */; };
 		E232FB822991B3BA00101D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E232FB812991B3BA00101D11 /* Assets.xcassets */; };
@@ -14,6 +15,10 @@
 		E232FB8F2991B3BA00101D11 /* LBOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB8E2991B3BA00101D11 /* LBOTests.swift */; };
 		E232FB992991B3BA00101D11 /* LBOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB982991B3BA00101D11 /* LBOUITests.swift */; };
 		E232FB9B2991B3BA00101D11 /* LBOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232FB9A2991B3BA00101D11 /* LBOUITestsLaunchTests.swift */; };
+		E2C5C3CD2993E80A002AD997 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3CC2993E80A002AD997 /* NetworkRouter.swift */; };
+		E2C5C3CF2993E83D002AD997 /* NetworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3CE2993E83D002AD997 /* NetworkRouterTests.swift */; };
+		E2C5C3D12993E890002AD997 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3D02993E890002AD997 /* ServiceProvider.swift */; };
+		E2C5C3D929953EA1002AD997 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E2C5C3D829953EA1002AD997 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E21CA5F52991C1B200DAA612 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E232FB7A2991B3B900101D11 /* LBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E232FB7D2991B3B900101D11 /* LBOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBOApp.swift; sourceTree = "<group>"; };
 		E232FB7F2991B3B900101D11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,10 @@
 		E232FB942991B3BA00101D11 /* LBOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E232FB982991B3BA00101D11 /* LBOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBOUITests.swift; sourceTree = "<group>"; };
 		E232FB9A2991B3BA00101D11 /* LBOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2C5C3CC2993E80A002AD997 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		E2C5C3CE2993E83D002AD997 /* NetworkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouterTests.swift; sourceTree = "<group>"; };
+		E2C5C3D02993E890002AD997 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		E2C5C3DA299540EF002AD997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C5C3D929953EA1002AD997 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +105,8 @@
 		E232FB7C2991B3B900101D11 /* LBO */ = {
 			isa = PBXGroup;
 			children = (
+				E2C5C3DA299540EF002AD997 /* Info.plist */,
+				E2C5C3CB2993E7F8002AD997 /* Data */,
 				E232FB7D2991B3B900101D11 /* LBOApp.swift */,
 				E232FB7F2991B3B900101D11 /* ContentView.swift */,
 				E232FB812991B3BA00101D11 /* Assets.xcassets */,
@@ -114,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E232FB8E2991B3BA00101D11 /* LBOTests.swift */,
+				E2C5C3CE2993E83D002AD997 /* NetworkRouterTests.swift */,
 			);
 			path = LBOTests;
 			sourceTree = "<group>";
@@ -125,6 +139,16 @@
 				E232FB9A2991B3BA00101D11 /* LBOUITestsLaunchTests.swift */,
 			);
 			path = LBOUITests;
+			sourceTree = "<group>";
+		};
+		E2C5C3CB2993E7F8002AD997 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C3CC2993E80A002AD997 /* NetworkRouter.swift */,
+				E2C5C3D02993E890002AD997 /* ServiceProvider.swift */,
+				E21CA5F52991C1B200DAA612 /* Book.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +167,9 @@
 			dependencies = (
 			);
 			name = LBO;
+			packageProductDependencies = (
+				E2C5C3D829953EA1002AD997 /* Kingfisher */,
+			);
 			productName = LBO;
 			productReference = E232FB7A2991B3B900101D11 /* LBO.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +242,9 @@
 				Base,
 			);
 			mainGroup = E232FB712991B3B900101D11;
+			packageReferences = (
+				E2C5C3D729953EA1002AD997 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = E232FB7B2991B3B900101D11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E232FB802991B3B900101D11 /* ContentView.swift in Sources */,
+				E2C5C3D12993E890002AD997 /* ServiceProvider.swift in Sources */,
+				E2C5C3CD2993E80A002AD997 /* NetworkRouter.swift in Sources */,
 				E232FB7E2991B3B900101D11 /* LBOApp.swift in Sources */,
+				E21CA5F62991C1B200DAA612 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E232FB8F2991B3BA00101D11 /* LBOTests.swift in Sources */,
+				E2C5C3CF2993E83D002AD997 /* NetworkRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +454,14 @@
 				DEVELOPMENT_TEAM = 53262BVL7Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LBO/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +469,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.npagesy.LBO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,11 +489,14 @@
 				DEVELOPMENT_TEAM = 53262BVL7Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LBO/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +504,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.npagesy.LBO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -583,6 +629,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2C5C3D729953EA1002AD997 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2C5C3D829953EA1002AD997 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C5C3D729953EA1002AD997 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E232FB722991B3B900101D11 /* Project object */;
 }
