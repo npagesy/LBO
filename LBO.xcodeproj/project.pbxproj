@@ -19,6 +19,8 @@
 		E2C5C3CF2993E83D002AD997 /* NetworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3CE2993E83D002AD997 /* NetworkRouterTests.swift */; };
 		E2C5C3D12993E890002AD997 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3D02993E890002AD997 /* ServiceProvider.swift */; };
 		E2C5C3D929953EA1002AD997 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E2C5C3D829953EA1002AD997 /* Kingfisher */; };
+		E2C5C3DC2995980D002AD997 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3DB2995980D002AD997 /* Storage.swift */; };
+		E2C5C3E42995B35A002AD997 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C3E32995B35A002AD997 /* EBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		E2C5C3CE2993E83D002AD997 /* NetworkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouterTests.swift; sourceTree = "<group>"; };
 		E2C5C3D02993E890002AD997 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		E2C5C3DA299540EF002AD997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E2C5C3DB2995980D002AD997 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		E2C5C3E32995B35A002AD997 /* EBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C5C3D929953EA1002AD997 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C5C3D929953EA1002AD997 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,7 @@
 			children = (
 				E2C5C3DA299540EF002AD997 /* Info.plist */,
 				E2C5C3CB2993E7F8002AD997 /* Data */,
+				E2C5C3DD2995983E002AD997 /* Domain */,
 				E232FB7D2991B3B900101D11 /* LBOApp.swift */,
 				E232FB7F2991B3B900101D11 /* ContentView.swift */,
 				E232FB812991B3BA00101D11 /* Assets.xcassets */,
@@ -149,6 +154,15 @@
 				E21CA5F52991C1B200DAA612 /* Book.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E2C5C3DD2995983E002AD997 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C3DB2995980D002AD997 /* Storage.swift */,
+				E2C5C3E32995B35A002AD997 /* EBook.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,9 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E232FB802991B3B900101D11 /* ContentView.swift in Sources */,
+				E2C5C3DC2995980D002AD997 /* Storage.swift in Sources */,
 				E2C5C3D12993E890002AD997 /* ServiceProvider.swift in Sources */,
 				E2C5C3CD2993E80A002AD997 /* NetworkRouter.swift in Sources */,
 				E232FB7E2991B3B900101D11 /* LBOApp.swift in Sources */,
+				E2C5C3E42995B35A002AD997 /* EBook.swift in Sources */,
 				E21CA5F62991C1B200DAA612 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
